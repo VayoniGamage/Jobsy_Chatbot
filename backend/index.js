@@ -1,37 +1,38 @@
-// index.js
 import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
-import OpenAI from 'openai';
+import { Configuration, OpenAIApi } from 'openai';
 
 dotenv.config();
 
 const app = express();
+const port = 5000;
+
 app.use(cors());
 app.use(express.json());
 
-// Initialize OpenAI with your API key
-const openai = new OpenAI({
+const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
 });
+const openai = new OpenAIApi(configuration);
 
 app.post('/chat', async (req, res) => {
   const { message } = req.body;
 
   try {
-    const response = await openai.chat.completions.create({
-      model: 'gpt-3.5-turbo',
-      messages: [{ role: 'user', content: message }],
+    const completion = await openai.createChatCompletion({
+      model: "gpt-3.5-turbo",
+      messages: [{ role: "user", content: message }],
     });
 
-    const reply = response.choices[0].message.content;
+    const reply = completion.data.choices[0].message.content;
     res.json({ reply });
   } catch (error) {
-    console.error('OpenAI error:', error);
-    res.status(500).json({ error: 'Failed to get response from OpenAI' });
+    console.error("OpenAI error:", error.response?.data || error.message);
+    res.status(500).json({ reply: "❌ Error generating response from OpenAI" });
   }
 });
 
-app.listen(5000, () => {
-  console.log('✅ Jobsy backend running on http://localhost:5000');
+app.listen(port, () => {
+  console.log(`✅ Backend running on http://localhost:${port}`);
 });
