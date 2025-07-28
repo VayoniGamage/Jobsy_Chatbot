@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "question": "How do I write a professional resume?",
+    "answer": "Start with your name and contact info. Use clear section titles like Summary, Skills, Education, and Experience. Keep it concise, use bullet points, and tailor it to the job you're applying for."
+  },
+  {
+    "id": 2,
+    "question": "What are the top tech jobs in 2025?",
+    "answer": "The top tech jobs in 2025 include AI Engineer, Cloud Solutions Architect, Cybersecurity Analyst, Data Scientist, DevOps Engineer, and Full Stack Developer."
+  },
+  {
+    "id": 3,
+    "question": "How can I improve my LinkedIn profile?",
+    "answer": "Use a professional photo, write a compelling headline, add a detailed summary, list achievements, and request recommendations from colleagues."
+  },
+  {
+    "id": 4,
+    "question": "How should I prepare for a tech interview?",
+    "answer": "Practice coding problems on platforms like LeetCode or HackerRank. Review system design concepts, study behavioral questions, and research the company beforehand."
+  },
+  {
+    "id": 5,
+    "question": "What should I include in a cover letter?",
+    "answer": "Include a brief introduction, explain why you're a good fit, mention specific achievements, and express enthusiasm for the company."
+  },
+  {
+    "id": 6,
+    "question": "Which platforms can I use to find freelance tech jobs?",
+    "answer": "Popular platforms for freelancing include Upwork, Freelancer, Toptal, Fiverr, and Guru."
+  },
+  {
+    "id": 7,
+    "question": "What soft skills are important in tech careers?",
+    "answer": "Communication, teamwork, adaptability, time management, and problem-solving are essential soft skills in tech."
+  },
+  {
+    "id": 8,
+    "question": "How can I transition from a non-tech background to a tech role?",
+    "answer": "Start with online courses in your area of interest, build projects, attend bootcamps, and highlight transferable skills in your resume."
+  },
+  {
+    "id": 9,
+    "question": "What should I avoid on my resume?",
+    "answer": "Avoid including personal details like age or photo, spelling mistakes, vague job descriptions, and unverified achievements."
+  },
+  {
+    "id": 10,
+    "question": "What are common interview questions for software engineers?",
+    "answer": "Common questions include: Tell me about yourself, Describe a project you worked on, Explain OOP concepts, Solve a coding problem, and Design a system."
+  },
+  {
+    "resume": "Experienced web developer with knowledge of React and Node.js...",
+    "response": "You can improve formatting. Suggested roles: Full Stack Dev..."
+  },
+  {
+    "resume": "Data analyst with experience in Excel, Python and SQL...",
+    "response": "Looks solid. Try Data Analyst, BI Developer, or ML Intern..."
+  }
+]
+
